@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledStartButton = styled.button`
   padding: 1.5rem 2rem;
   border-radius: 0.4rem;
-  background: ${(props) => props.theme.colors.green};
+  background: ${({ theme }) => theme.colors.green};
   border: none;
   outline: none;
   text-transform: uppercase;
@@ -13,6 +13,6 @@ export const StyledStartButton = styled.button`
   cursor: pointer;
 
   &:hover {
-    background: ${(props) => props.theme.colors.greenDark};
+    background: ${({ theme }) => theme.colors.greenDark};
   }
 `;

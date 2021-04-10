@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const StyledQuestionCounter = styled.div`
-  color: ${(props) => props.theme.colors.white};
+  color: ${({ theme }) => theme.colors.white};
   font-weight: 600;
-  border: 0.3rem solid ${(props) => props.theme.colors.blue};
+  border: 0.3rem solid ${({ theme }) => theme.colors.blue};
   border-radius: 4rem;
   width: 30rem;
   max-width: 100%;
@@ -23,8 +23,8 @@ export const Text = styled.p`
 `;
 
 export const ProgressBar = styled.span`
-  width: ${(props) => `${props.progressBarPercentage}%`};
+  width: ${({ progressBarPercentage }) => `${progressBarPercentage}%`};
   height: 100%;
-  background: ${(props) => props.theme.colors.blue};
+  background: ${({ theme }) => theme.colors.blue};
   border-radius: 4rem;
 `;

@@ -8,7 +8,7 @@ export const StyledGameOver = styled.div`
 `;
 
 export const Paragraph = styled.p`
-  color: ${(props) => props.theme.colors.white};
+  color: ${({ theme }) => theme.colors.white};
   font-size: 30px;
   text-transform: uppercase;
 `;
@@ -17,7 +17,7 @@ export const Button = styled.button`
   margin-top: 3rem;
   padding: 1rem 2rem;
   border-radius: 0.4rem;
-  background: ${(props) => props.theme.colors.green};
+  background: ${({ theme }) => theme.colors.green};
   border: none;
   outline: none;
   text-transform: uppercase;
@@ -27,6 +27,6 @@ export const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    background: ${(props) => props.theme.colors.greenDark};
+    background: ${({ theme }) => theme.colors.greenDark};
   }
 `;
